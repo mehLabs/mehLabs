@@ -1,7 +1,7 @@
-- 👋 Hi, I’m @mehLabs
-- 👀 I’m interested in learning code and helping in projects.
-- 🌱 I’m currently learning Java, javascript and Python.
-- 💞️ I’m looking to collaborate on anything.
+- 👋 Hi, @mehLabs here
+- 📖 I’m a Systems Engineering studend and a self-taught developer.
+- 🌱 Currently learning Java, javascript and Python.
+- 🙌 If you need help with your project, I'll be glad to help!.
 
 <!---
 mehLabs/mehLabs is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
