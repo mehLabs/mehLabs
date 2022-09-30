@@ -33,7 +33,7 @@ Class FullStack extends Developer{
       "ExpressJS",
       "MySQL",
       "PostgreSQL"
-    ]
+    ];
     this.job = new Job("Stretcher Bearer in a Hospital");
   }
 
