@@ -37,8 +37,8 @@ Class FullStack extends Developer{
     this.job = new Job("Stretcher Bearer in a Hospital");
   }
 
-  darEmpleo(Empleo newEmpleo){
-    this.empleo = newEmpleo;
+  employ(Job newJob){
+    this.job = newJob;
     System.out.println("Thank you so much! You'll have such a great person and professional");
   }
   
