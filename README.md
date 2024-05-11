@@ -3,13 +3,13 @@
 import Developer from 'bahia-blanca';
 
 @Getter
-Class FullStack extends Developer{
+Class Hugo extends Developer{
   
   protected String name;
   protected String location;
   protected String title;
-  protected String[] frontend;
-  protected String[] backend;
+  protected String[] frontendTechs;
+  protected String[] backendTechs;
   protected String[] interests;
   protected Job job;
   protected List<Job> desiredJobs;
@@ -25,24 +25,19 @@ Class FullStack extends Developer{
       "Cats",
       "Economics",
       "Philosophy"
-    ]
-    this.frontend = [ 
-      "JavaScript", 
-      "Typescript", 
+    ];
+    this.frontendTechs = [ 
       "Angular", 
       "Reactjs", 
-      "Redux", 
       "Bootstrap", 
       "TailwindCSS", 
-      "CSSModules" 
     ];
-    this.backend = [
+    this.backendTechs = [
       "Java",
       "Spring Boot",
       "NodeJS",
-      "ExpressJS",
-      "MySQL",
-      "PostgreSQL"
+      "NestJS",
+      "SQL",
     ];
     this.desiredJobs = new ArrayList<Job>() {
       {
@@ -63,7 +58,14 @@ Class FullStack extends Developer{
       }
     }
   }
-  
+
+  kill(){
+    throw new Exception("Impossible");
+  }
+
+  dm(){
+    throw new Exception("What? This is just a README. Message him!");
+  }
 }
 ```
 
