@@ -55,6 +55,8 @@ Class Hugo extends Developer{
         this.job = newJob;
         System.out.println("Thank you so much! You'll have such a great person and professional");
         break;
+      }else{
+        throw new Exception("Nice offer, thank you. I'll... contact you... some day...");
       }
     }
   }
