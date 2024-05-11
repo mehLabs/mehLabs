@@ -1,11 +1,12 @@
 ```Java
 ...
-import Developer from 'bahia-blanca';
+import java.util.ArrayList;
+import java.util.List;
 
+// Assuming Developer is a class defined in your project
 @Getter
-Class Hugo extends Developer{
+class Hugo extends Developer {
   
-  protected String name;
   protected String location;
   protected String title;
   protected String[] frontendTechs;
@@ -14,61 +15,59 @@ Class Hugo extends Developer{
   protected Job job;
   protected List<Job> desiredJobs;
 
-  FullStack(){
-    this.name = "Hugo Iturrieta";
+  Hugo() {
+    super("Hugo Iturrieta");
     this.location = "Bahía Blanca, Argentina";
     this.title = "FullStack Developer";
-    this.interests = [
+    this.interests = new String[] {
       "Guitar",
       "Videogames",
       "Travel",
       "Cats",
       "Economics",
       "Philosophy"
-    ];
-    this.frontendTechs = [ 
+    };
+    this.frontendTechs = new String[] { 
       "Angular", 
       "Reactjs", 
       "Bootstrap", 
-      "TailwindCSS", 
-    ];
-    this.backendTechs = [
+      "TailwindCSS"
+    };
+    this.backendTechs = new String[] {
       "Java",
       "Spring Boot",
       "NodeJS",
       "NestJS",
-      "SQL",
-    ];
-    this.desiredJobs = new ArrayList<Job>() {
-      {
-        add(new Job("Godot Developer"));
-        add(new Job("Backend Developer"));
-        add(new Job("DevOps"));
-      }
-    this.job = new Job("Developer at Buenos Aires City Gobernment");
+      "SQL"
+    };
+    this.desiredJobs = new ArrayList<Job>() {{
+      add(new Job("Godot Developer"));
+      add(new Job("Backend Developer"));
+      add(new Job("DevOps"));
+    }};
+    this.job = new Job("Developer at Buenos Aires City Government");
   }
 
-  employ(Job newJob){
-    for(int i=0; i < this.desiredJobs.size(); i++){
-      Job desiredJob = this.desiredJobs.get(i);
-      if (newJob.equals(desiredJob)){
+  public void employ(Job newJob) {
+    for(Job desiredJob : this.desiredJobs) {
+      if (newJob.equals(desiredJob)) {
         this.job = newJob;
         System.out.println("Thank you so much! You'll have such a great person and professional");
-        break;
-      }else{
-        throw new Exception("Nice offer, thank you. I'll... contact you... some day...");
+        return;
       }
     }
+    throw new RuntimeException("Nice offer, thank you. I'll... contact you... some day...");
   }
 
-  kill(){
-    throw new Exception("Impossible");
+  public void kill() {
+    throw new RuntimeException("Impossible");
   }
 
-  dm(){
-    throw new Exception("What? This is just a README. Message him!");
+  public void dm() {
+    throw new RuntimeException("What? This is just a README. Message him!");
   }
 }
+
 ```
 
 If you want to contact me, please send me a DM or email me from my webpage https://hugoitu.com.ar
