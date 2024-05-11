@@ -3,7 +3,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-// Assuming Developer is a class defined in your project
 @Getter
 class Hugo extends Developer {
   
