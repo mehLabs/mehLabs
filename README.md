@@ -44,7 +44,7 @@ Class FullStack extends Developer{
       "MySQL",
       "PostgreSQL"
     ];
-    this.desiredJobs = new ArrayList<String>() {
+    this.desiredJobs = new ArrayList<Job>() {
       {
         add(new Job("Frontend developer"));
         add(new Job("Backend developer"));
