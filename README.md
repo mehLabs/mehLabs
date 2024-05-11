@@ -46,11 +46,11 @@ Class FullStack extends Developer{
     ];
     this.desiredJobs = new ArrayList<Job>() {
       {
-        add(new Job("Frontend developer"));
-        add(new Job("Backend developer"));
-        add(new Job("FullStack developer"));
+        add(new Job("Godot Developer"));
+        add(new Job("Backend Developer"));
+        add(new Job("DevOps"));
       }
-    this.job = new Job("Stretcher Bearer in a Hospital");
+    this.job = new Job("Developer at Buenos Aires City Gobernment");
   }
 
   employ(Job newJob){
