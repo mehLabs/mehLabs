@@ -37,7 +37,8 @@ class Hugo extends Developer {
       "Spring Boot",
       "NodeJS",
       "NestJS",
-      "SQL"
+      "SQL",
+      ".NET Core"
     };
     this.desiredJobs = new ArrayList<Job>() {{
       add(new Job("Godot Developer"));
@@ -47,12 +48,11 @@ class Hugo extends Developer {
     this.job = new Job("Developer at Buenos Aires City Government");
   }
 
-  public void employ(Job newJob) {
+  public String employ(Job newJob) {
     for(Job desiredJob : this.desiredJobs) {
       if (newJob.equals(desiredJob)) {
         this.job = newJob;
-        System.out.println("Thank you so much! You'll have such a great person and professional");
-        return;
+        return "Thank you so much! You'll have such a great person and professional";
       }
     }
     throw new RuntimeException("Nice offer, thank you. I'll... contact you... some day...");
@@ -69,4 +69,4 @@ class Hugo extends Developer {
 
 ```
 
-If you want to contact me, please send me a DM or email me from my webpage https://hugoitu.com.ar
+If you want to contact me, please send me a DM or email me from my webpage https://hugoitu.com.ar (UPDATE: DOWN)
