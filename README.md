@@ -4,17 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Getter
-class Hugo extends Developer {
+class Hugo<T extends Job> extends Developer<T> {
   
   protected String location;
   protected String title;
   protected String[] frontendTechs;
   protected String[] backendTechs;
   protected String[] interests;
-  protected Job job;
-  protected List<Job> desiredJobs;
+  protected T job;
+  protected List<T> desiredJobs;
 
-  Hugo() {
+  public Hugo() {
     super("Hugo Iturrieta");
     this.location = "Bahía Blanca, Argentina";
     this.title = "FullStack Developer";
@@ -41,15 +41,15 @@ class Hugo extends Developer {
       ".NET Core"
     };
     this.desiredJobs = new ArrayList<Job>() {{
-      add(new Job("Godot Developer"));
-      add(new Job("Backend Developer"));
-      add(new Job("DevOps"));
+      add(new T("Godot Developer"));
+      add(new T("Backend Developer"));
+      add(new T("DevOps"));
     }};
-    this.job = new Job("Developer at Buenos Aires City Government");
+    this.job = new T("Developer at Buenos Aires City Government");
   }
 
-  public String employ(Job newJob) {
-    for(Job desiredJob : this.desiredJobs) {
+  public String employ(T newJob) {
+    for(T desiredJob : this.desiredJobs) {
       if (newJob.equals(desiredJob)) {
         this.job = newJob;
         return "Thank you so much! You'll have such a great person and professional";
