@@ -4,20 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Getter
-class Hugo<T extends Job> extends Developer<T> {
+class Hugo extends Developer {
   
   protected String location;
   protected String title;
   protected String[] frontendTechs;
   protected String[] backendTechs;
   protected String[] interests;
-  protected T job;
-  protected List<T> desiredJobs;
+  protected Job job;
+  protected List<Job> desiredJobs;
 
   public Hugo() {
     super("Hugo Iturrieta");
     this.location = "Bahía Blanca, Argentina";
-    this.title = "FullStack Developer";
+    this.title = "Software Developer";
     this.interests = new String[] {
       "Guitar",
       "Videogames",
@@ -41,21 +41,15 @@ class Hugo<T extends Job> extends Developer<T> {
       ".NET Core"
     };
     this.desiredJobs = new ArrayList<Job>() {{
-      add(new T("Godot Developer"));
-      add(new T("Backend Developer"));
-      add(new T("DevOps"));
+      add(new Job("Godot Developer")); // yes please
+      add(new Job("Backend Developer"));
+      // add(new Job("DevOps")); // maybe in a future, but not for now
     }};
-    this.job = new T("Developer at Buenos Aires City Government");
+    this.job = new Job("Software Developer at Buenos Aires City Government");
   }
 
-  public String employ(T newJob) {
-    for(T desiredJob : this.desiredJobs) {
-      if (newJob.equals(desiredJob)) {
-        this.job = newJob;
-        return "Thank you so much! You'll have such a great person and professional";
-      }
-    }
-    throw new RuntimeException("Nice offer, thank you. I'll... contact you... some day...");
+  public String employ(Job newJob) {
+    throw new RuntimeException("Sorry but currently not available");
   }
 
   public void kill() {
