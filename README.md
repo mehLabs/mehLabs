@@ -46,4 +46,4 @@
 
 ```
 
-If you want to contact me, please send me a DM or email me from my webpage [https://mehlabs.github.io](https://mehlabs.github.io/) (UPDATE: DOWN)
+If you want to contact me, please send me a DM or email me from my webpage [https://mehlabs.github.io](https://mehlabs.github.io/)
