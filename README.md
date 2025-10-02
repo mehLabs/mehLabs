@@ -31,8 +31,7 @@
   },
   "desiredRoles": ["Godot Developer", "Backend Developer"],
   "contact": {
-    "website": "https://mehlabs.github.io",
-    "websiteStatus": "DOWN (temporal)"
+    "website": "https://mehlabs.github.io"
   },
   "status": {
     "acceptingOffers": false,
@@ -46,4 +45,4 @@
 
 ```
 
-If you want to contact me, please send me a DM or email me from my webpage [https://mehlabs.github.io](https://mehlabs.github.io/)
+If you want to contact me, please send me a DM, visit my webpage [https://mehlabs.github.io](https://mehlabs.github.io/) or [email me](mailto:hiturrieta.dev@gmail.com)
