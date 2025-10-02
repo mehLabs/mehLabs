@@ -31,7 +31,7 @@
   },
   "desiredRoles": ["Godot Developer", "Backend Developer"],
   "contact": {
-    "website": "https://hugoitu.com.ar",
+    "website": "https://mehlabs.github.io",
     "websiteStatus": "DOWN (temporal)"
   },
   "status": {
@@ -46,4 +46,4 @@
 
 ```
 
-If you want to contact me, please send me a DM or email me from my webpage https://hugoitu.com.ar (UPDATE: DOWN)
+If you want to contact me, please send me a DM or email me from my webpage [https://hugoitu.com.ar](https://mehlabs.github.io/) (UPDATE: DOWN)
