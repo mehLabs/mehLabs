@@ -1,7 +1,7 @@
 ### Hi, I'm Hugo 👋
 
 Software developer from Bahía Blanca, Argentina. I build web apps, backends and AI agents at
-**[MehLabs](https://mehlabs.com.ar)**, and I'm working on a game in Godot that's coming soon.
+**[MehLabs](https://mehlabs.com.ar)**, and I'm working for Grape Software, I'm also working on a game in Godot that's coming soon.
 Before that: Buenos Aires City's government and the Agencia Nacional de Seguridad Vial.
 
 **Got a project in mind?** Get a quick estimate at [mehlabs.com.ar](https://mehlabs.com.ar) or [email me](mailto:hiturrieta.dev@gmail.com).
